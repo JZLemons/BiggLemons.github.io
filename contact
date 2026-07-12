@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<style>
+body {
+	background-color: #211a2e;
+	font-family: Arial;
+	color: #DDD0F0;
+}
+
+h1 {
+	text-align: center;
+	color: #b896e8;
+}
+
+h2 {
+    color: #b896e8;
+    text-align: center;
+    font-weight: normal;
+}
+
+hr {
+	border: 1px solid #4a3e60;
+}
+
+p {
+	color: #7a6490;
+}
+
+form {
+	width: 500px;
+	margin: auto;
+	background-color: #19132a;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+fieldset {
+	border: 1px solid #4a3e60;
+	border-radius: 6px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+legend {
+	font-weight: bold;
+	color: #b896e8;
+	padding: 0 8px;
+}
+
+.menu_buttons {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.menu_buttons .btn {
+	flex: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#btn_home {
+	background-color: #7fa1f1;
+	color: #142a5d;
+}
+
+#btn_howto {
+	background-color: #f094c0;
+	color: #6a1f40;
+}
+
+#btn_media {
+	background-color: #f5e47a;
+	color: #5c4f16;
+}
+
+#btn_shop {
+	background-color: #62e89a;
+	color: #1d5c3d;
+}
+
+#btn_contact {
+	background-color: #f4ae72;
+	color: #5d3614;
+}
+
+input[type="text"], input[type="date"], input[type="number"], input[type="file"], textarea, select {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+	background-color: #30264a;
+	color: #ddd0f0;
+	border: 1px solid #4a3e60;
+	border-radius: 6px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	accent-color: #62e89a;
+	width: auto;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+input[type="date"], select {
+	color: #ddd0f0;
+}
+
+input[type="file"] {
+	color: #7a6490;
+}
+
+input[type="file"]::file-selector-button {
+	background-color: #f5e47a;
+	color: #5c4f16;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	color: #d9b0ff;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+.option_label {
+	display: inline;
+	font-weight: normal;
+	margin-right: 15px;
+}
+
+.button_row {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+button {
+	color: white;
+	padding: 20px;
+	width: 100%;
+	/* color: #ddd0f0; */
+	font-weight: bold;
+	border-radius: 6px;
+}
+
+button[type="submit"] {
+	background-color: #62e89a;
+	color: #1d5c3d;
+}
+
+button[type="reset"] {
+	background-color: #f5e47a;
+	color: #5c4f16;
+}
+</style>
+</head>
+<body>
+<form>
+
+        <h1>B & B</h1>
+        <h2>CONTACT</h2>
+        <hr>
+
+	<div class="menu_buttons">
+		<a href="index.html" id="btn_home" class="btn">Home</a>
+		<button type="button" id="btn_howto" class="btn">How To</button>
+		<button type="button" id="btn_media" class="btn">Media</button>
+		<button type="button" id="btn_shop" class="btn">Shop</button>
+		<a href="contact.html" id="btn_contact" class="btn">Contact</a>
+	</div>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name">
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email">
+
+		<label for="phone">Phone Number</label>
+		<input type="text" id="phone" name="phone">
+	</fieldset>
+
+	<fieldset>
+		<legend>Project Details</legend>
+
+		<label for="subject">Subject</label>
+		<input type="text" id="subject" name="subject">
+
+		<label for="message">Message</label>
+		<textarea id="message" name="message" rows="5"></textarea>
+
+		<label for="help">What do you need help with?</label>
+		<select id="help" name="help">
+			<option>Electronics</option>
+			<option>Programming</option>
+			<option>Electronics & Programming</option>
+			<option>Other</option>
+		</select>
+		
+		<label for="myfile">Upload a file:</label>
+		<input type="file" id="myfile" name="myfile">
+	</fieldset>
+
+	<fieldset>
+		<legend>Contact Preferences</legend>
+		<label for="contact">How would you like to be contacted?</label>
+		<br>
+		<input type="checkbox" id="contact-email" name="contact" value="email">
+		<label for="contact-email" class="option_label">Email</label>
+		<input type="checkbox" id="contact-phone" name="contact" value="phone">
+		<label for="contact-phone" class="option_label">Phone</label>
+		<input type="checkbox" id="contact-text" name="contact" value="Text Message">
+		<label for="contact-text" class="option_label">Text Message</label>
+	</fieldset>
+
+	<div class="button_row">
+		<button type="submit">Submit</button>
+		<button type="reset">Clear Form</button>
+	</div>
+
+</form>
+
+</body>
+</html>
