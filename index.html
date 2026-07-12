@@ -4,15 +4,183 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin's Portfolio</title>
+    <style>
+        body {
+            background-color: #211a2e;
+            color: #ddd0f0;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: #b896e8;
+            text-align: center;
+        }
+
+        h2 {
+            color: #b896e8;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        hr {
+            border: 1px solid #4a3e60;
+        }
+
+        a {
+            color: #7dd8e8;
+        }
+
+        form {
+	        width: 500px;
+	        margin: auto;
+	        background-color: #19132a;
+	        padding: 20px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: 1px solid #4a3e60;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #b896e8;
+            padding: 0 8px;
+        }
+
+        .menu_buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu_buttons .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #btn_media {
+            background-color: #f5e47a;
+            color: #5c4f16;
+        }
+
+        #btn_contact {
+            background-color: #f4ae72;
+            color: #5d3614;
+        }
+
+        #btn_howto {
+            background-color: #f094c0;
+            color: #6a1f40;
+        }
+
+        #btn_shop {
+            background-color: #62e89a;
+            color: #1d5c3d;
+        }
+
+        #btn_home {
+            background-color: #7fa1f1;
+            color: #142a5d;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Justin's Portfolio</h1>
-    <hr>
-    <p>Hello, my name is Justin and this is my portfolio website.
-        <br>
-        this is placeholder text, and below is my placeholder image.
+    <form>
+        <h1>B & B</h1>
+        <h2>HOME</h2>
+        <hr>
 
-    </p>
-    <img src="Thumbs_Up.png">
+        <div class="menu_buttons">
+            <a href="index.html" id="btn_home" class="btn">Home</a>
+            <button type="button" id="btn_howto" class="btn">How To</button>
+            <button type="button" id="btn_media" class="btn">Media</button>
+            <button type="button" id="btn_shop" class="btn">Shop</button>
+            <a href="contact-beginner.html" id="btn_contact" class="btn">Contact</a>
+        </div>
+
+        <fieldset>
+            <legend>About Me</legend>
+            <p>Hello, my name is Justin. I am a hobbyist programmer and electronics developer;
+                I have been active and consistent in these hobbies since 2021.
+                Having been an aircraft avionics technician since 2016, and an automotive technician before that, I believe my experience has given me a solid foundation in electrical theory and electronics fundamentals.
+                <br><br>
+                Some past projects of mine have included:<br>
+                <ul>
+                    <li>an ARINC 429 signal generator for testing avionics equipment</li>
+                    <li>a Custom ESP-32 based replacement PCB and microcontroller assembly for a digital gauge cluster and heads-up display for a 1989 Nissan 240SX</li>
+                    <li>A laptop conversion kit for a commodore 64</li>
+                </ul>
+
+                My current goal is to continue to improve on my programming and electronics understanding, and become a professional in the field of embedded systems and electronics development.
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+            I have a wide variety of interests, but some of my main ones include:
+
+            <ul>
+                <li>Programming</li>
+                <li>Electronics Development</li>
+                <li>Game Development</li>
+                <li>Automotive Restoration</li>
+                <li>Vintage Computers</li>
+                <li>Gaming</li>
+                <li>Art & Design</li>
+                <li>3D Design / CAD</li>
+                <li>3D Printing</li>
+
+            </ul>
+
+            Some links to things and channels that interest me:
+            <ul>
+                <li><a href="https://www.youtube.com/@BenEater">Ben Eater's Youtube Channel</a></li>
+                <li><a href="https://www.arduino.cc/">Arduino</a></li>
+                <li><a href="https://www.raspberrypi.com/">Raspberry Pi</a></li>
+                <li><a href="https://godotengine.org/">Godot Game Engine</a></li>
+
+            </ul>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Project Photos</legend>
+
+            <img src="commodore64_laptop.jpg" alt="Commodore 64 laptop conversion">
+            <br>
+            <p style="color: #7a6490; font-size: 14px; font-style: italic;">commodore 64 laptop conversion</p>
+            <br>
+            <img src="cluster1.jpg" alt="240SX custom cluster display">
+            <br>
+            <p style="color: #7a6490; font-size: 14px; font-style: italic;">240SX Custom Cluster Display</p>
+            <br>
+            <img src="cluster3.jpg" alt="240SX custom cluster PCBs">
+            <br>
+            <p style="color: #7a6490; font-size: 14px; font-style: italic;">240SX Custom Cluster PCBs</p>
+            <br>
+
+             <p style="color: #7a6490; font-size: 14px; font-style: italic;">this should be moved to media in the future</p>
+
+
+        </fieldset>
+
+
+    </form>
 </body>
 </html>
