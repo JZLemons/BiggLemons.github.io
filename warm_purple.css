@@ -1,0 +1,38 @@
+/* ============================================================
+   warm_purple.css
+   Theme: Twilight Editor
+   A warm-tinted dark purple palette inspired by code editors
+   ============================================================ */
+
+:root {
+
+  /* --- Primary --- */
+  --color-background:   #211a2e;  /* Warm Void    — page background        */
+  --color-surface:      #19132a;  /* Deep Plum    — panels / sidebar        */
+  --color-raised:       #30264a;  /* Bruise       — cards / borders         */
+  --color-text:         #ddd0f0;  /* Warm White   — body text               */
+
+  /* --- Secondary --- */
+  --color-primary:      #d9b0ff;  /* Wisteria     — keywords / brand        */
+  --color-heading:      #b896e8;  /* Heather      — headings / structural   */
+  --color-link:         #7dd8e8;  /* Ice Cyan     — links / variables       */
+
+  /* --- Accent --- */
+  --color-success:      #62e89a;  /* Warm Mint    — CTAs / success          */
+  --color-highlight:    #f094c0;  /* Rose         — numbers / badges        */
+  --color-warning:      #f5e47a;  /* Warm Gold    — strings / warnings      */
+  --color-accent2:      #f4ae72;  /* Warm Amber   — tags / constants        */
+  --color-accent3:      #7fa1f1;  /* Dusk Blue    — functions / info        */
+
+  /* --- Accent (dark, for text on accent backgrounds) --- */
+  --color-success-dark:   #1d5c3d;  /* Deep Mint    — text on Warm Mint     */
+  --color-highlight-dark: #6a1f40;  /* Deep Berry   — text on Rose          */
+  --color-warning-dark:   #5c4f16;  /* Deep Olive   — text on Warm Gold     */
+  --color-accent2-dark:   #5d3614;  /* Deep Amber   — text on Warm Amber    */
+  --color-accent3-dark:   #142a5d;  /* Deep Navy    — text on Dusk Blue     */
+
+  /* --- Neutral --- */
+  --color-muted:        #7a6490;  /* Mauve        — comments / muted text   */
+  --color-border:       #4a3e60;  /* Shadow       — dividers / inactive     */
+
+}
